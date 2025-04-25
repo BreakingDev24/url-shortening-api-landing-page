@@ -1,0 +1,67 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: px-to-rem(120);
+}
+
+.navElements {
+  padding: 40px 24px;
+  position: absolute;
+  top: calc(100% + 20px);
+  background-color: $primary-darkViolet;
+  //   display: none;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  color: $text-menu-color-mobile;
+  font-weight: $font-weight-bold;
+}
+
+.nav {
+  border-bottom: 1px solid $neutral-grayishViolet;
+  ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.logBtnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+  button {
+    color: $text-menu-color-mobile;
+    font-weight: $font-weight-bold;
+  }
+  .loginBtn {
+    border: none;
+    background: none;
+  }
+  .signUpBtn {
+    border: none;
+    background-color: $primary-cyan;
+    border-radius: 28px;
+    padding: 12px 0;
+  }
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  .menuIcon {
+    width: 24px;
+  }
+}
