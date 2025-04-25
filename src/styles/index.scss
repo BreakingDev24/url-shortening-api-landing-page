@@ -1,0 +1,17 @@
+@use "./functions";
+@use "./variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: px-to-rem(1440);
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: $primary-cyan; // debug
+}
