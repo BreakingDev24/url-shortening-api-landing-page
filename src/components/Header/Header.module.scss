@@ -10,6 +10,7 @@ header {
 }
 
 .navElements {
+  font-size: px-to-rem(18);
   padding: 40px 24px;
   position: absolute;
   top: calc(100% + 20px);
@@ -46,6 +47,7 @@ header {
   gap: 30px;
   padding-top: 30px;
   button {
+    font-size: px-to-rem(18);
     color: $text-menu-color-mobile;
     font-weight: $font-weight-bold;
   }
