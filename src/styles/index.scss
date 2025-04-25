@@ -9,9 +9,15 @@
   padding: 0;
 }
 
+html {
+  font-family: $font-primary;
+}
+
 #root {
   max-width: px-to-rem(1440);
   min-height: 100vh;
   overflow-x: hidden;
   background-color: $primary-cyan; // debug
+
+  padding: 40px 24px;
 }
