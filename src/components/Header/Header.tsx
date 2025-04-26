@@ -14,11 +14,7 @@ export default function Header() {
   return (
     <header>
       <img className={style.logo} src={logo} alt="logo" />
-      <div
-        className={`${style.navElements} ${
-          isMenuOpen ? `${style.active}` : ""
-        }`}
-      >
+      <div className={`${style.navElements} ${isMenuOpen ? style.active : ""}`}>
         <nav className={style.nav}>
           <ul>
             <li>Feautures</li>
