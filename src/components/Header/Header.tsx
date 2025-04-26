@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import logo from "../../assets/logo.svg";
 import style from "./Header.module.scss";
 import menuIcon from "../../assets/burger-menu.svg";
@@ -14,7 +15,7 @@ export default function Header() {
   return (
     <header>
       <img className={style.logo} src={logo} alt="logo" />
-      <div className={`${style.navElements} ${isMenuOpen ? style.active : ""}`}>
+      <div className={clsx(style.navElements, { [style.active]: isMenuOpen })}>
         <nav className={style.nav}>
           <ul>
             <li>Feautures</li>
