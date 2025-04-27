@@ -1,0 +1,31 @@
+.heroPic {
+  width: 510px;
+}
+
+.heroTextContainer {
+  text-align: center;
+  h1 {
+    color: $neutral-veryDarkBlue;
+    font-size: px-to-rem(42);
+    letter-spacing: px-to-rem(-1.05);
+    line-height: 48px;
+    margin-bottom: 15px;
+  }
+  p {
+    color: $neutral-grayishViolet;
+    font-size: px-to-rem(18);
+    letter-spacing: px-to-rem(0.12);
+    line-height: 30px;
+    margin-bottom: 46px;
+  }
+
+  button {
+    color: $text-color-btn;
+    font-size: px-to-rem(20);
+    font-weight: $font-weight-medium;
+    padding: 14px 40px;
+    border: none;
+    background-color: $primary-cyan;
+    border-radius: 28px;
+  }
+}
