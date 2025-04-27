@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Hero></Hero>
+      <main>
+        <Hero></Hero>
+      </main>
     </>
   );
 }

@@ -13,11 +13,18 @@ html {
   font-family: $font-primary;
 }
 
-#root {
+main {
+  margin: auto;
   max-width: px-to-rem(1440);
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: white; // debug
+  background-color: $primary-bg-color; // debug
+}
 
-  padding: 40px 24px;
+header {
+  padding: 40px 24px 0;
+}
+
+section {
+  padding: 40px 24px 0;
 }
