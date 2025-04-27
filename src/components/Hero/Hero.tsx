@@ -2,8 +2,8 @@ import style from "./Hero.module.scss";
 import homePic from "../../assets/illustration-working.svg";
 export default function Hero() {
   return (
-    <main>
-      <div className={style.hero}>
+    <section className={style.hero}>
+      <div className={style.heroElements}>
         <img src={homePic} alt="illustration" className={style.heroPic} />
         <div className={style.heroTextContainer}>
           <h1>More than just shorter links</h1>
@@ -14,6 +14,6 @@ export default function Hero() {
           <button>Get Started</button>
         </div>
       </div>
-    </main>
+    </section>
   );
 }
