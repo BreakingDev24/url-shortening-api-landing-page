@@ -1,4 +1,6 @@
-header {
+.headerElements {
+  max-width: px-to-rem(1440);
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
