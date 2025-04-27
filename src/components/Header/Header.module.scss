@@ -21,7 +21,7 @@ header {
   //   display: flex;
   //   flex-direction: column;
 
-  color: $text-menu-color-mobile;
+  color: $text-color-btn;
   font-weight: $font-weight-bold;
   &.active {
     display: block;
@@ -48,7 +48,7 @@ header {
   padding-top: 30px;
   button {
     font-size: px-to-rem(18);
-    color: $text-menu-color-mobile;
+    color: $text-color-btn;
     font-weight: $font-weight-bold;
   }
   .loginBtn {
