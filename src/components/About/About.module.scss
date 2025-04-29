@@ -1,0 +1,78 @@
+.about {
+  margin-top: px-to-rem(160);
+}
+
+.intro {
+  text-align: center;
+  display: grid;
+  gap: px-to-rem(16);
+  margin-bottom: px-to-rem(92);
+
+  h2 {
+    color: $neutral-veryDarkBlue;
+    font-size: px-to-rem(28);
+    line-height: px-to-rem(48);
+    letter-spacing: -0.7px;
+  }
+
+  p {
+    color: $neutral-grayishViolet;
+  }
+}
+
+.cardsContainer {
+  display: grid;
+  gap: px-to-rem(92);
+  position: relative;
+
+  .connectionBar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 8px;
+    background-color: $primary-cyan;
+  }
+}
+
+.card {
+  padding: 77px 32px 41px;
+  background-color: white;
+  position: relative;
+}
+
+.iconContainer {
+  width: fit-content;
+  padding: px-to-rem(24);
+  background-color: $primary-darkViolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  img {
+    width: px-to-rem(40);
+  }
+}
+
+.cardText {
+  text-align: center;
+
+  h3 {
+    font-size: px-to-rem(22);
+    font-weight: $font-weight-bold;
+    margin-bottom: px-to-rem(16);
+    color: $neutral-veryDarkBlue;
+  }
+
+  p {
+    font-size: px-to-rem(15);
+    line-height: px-to-rem(26);
+    color: $neutral-grayishViolet;
+  }
+}
