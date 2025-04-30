@@ -21,8 +21,8 @@
   display: none;
   width: 100%;
   border-radius: 10px;
-  //   display: flex;
-  //   flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 
   color: $text-color-btn;
   font-weight: $font-weight-bold;
@@ -33,13 +33,15 @@
 
 .nav {
   border-bottom: 1px solid $neutral-grayishViolet;
+
   ul {
-    text-align: center;
     display: flex;
     flex-direction: column;
-    list-style: none;
 
+    text-align: center;
+    list-style: none;
     gap: 30px;
+
     padding-bottom: 30px;
   }
 }
@@ -92,26 +94,25 @@
     justify-content: space-between;
     background-color: inherit;
   }
-}
+  .nav {
+    font-size: px-to-rem(15);
+    border: none;
+    ul {
+      color: $neutral-grayishViolet;
+      flex-direction: row;
+      padding-bottom: 0;
+    }
+  }
 
-.nav {
-  font-size: px-to-rem(15);
-  border: none;
-  ul {
-    color: $neutral-grayishViolet;
+  .logBtnContainer {
     flex-direction: row;
-    padding-bottom: 0;
-  }
-}
+    padding-top: 0;
 
-.logBtnContainer {
-  flex-direction: row;
-  padding-top: 0;
-
-  .loginBtn {
-    color: $neutral-grayishViolet;
-  }
-  .signUpBtn {
-    padding: 8px 24px;
+    .loginBtn {
+      color: $neutral-grayishViolet;
+    }
+    .signUpBtn {
+      padding: 8px 24px;
+    }
   }
 }
