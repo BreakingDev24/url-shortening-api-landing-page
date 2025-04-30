@@ -1,0 +1,40 @@
+footer {
+  background-color: $primary-darkBlue;
+  padding: 54px 0;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  width: px-to-rem(120);
+}
+
+.footerContent {
+  display: grid;
+  gap: px-to-rem(48);
+}
+
+.listContainer {
+  display: grid;
+  gap: px-to-rem(40);
+}
+
+.linksContainer {
+  strong {
+    display: inline-block;
+    margin-bottom: px-to-rem(22);
+  }
+
+  ul {
+    display: grid;
+    gap: px-to-rem(10);
+    letter-spacing: -0.23px;
+  }
+}
+
+.social {
+  display: flex;
+  gap: px-to-rem(24);
+}
