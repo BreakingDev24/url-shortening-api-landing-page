@@ -14,21 +14,46 @@ html {
 }
 
 main {
-  margin: auto;
-  max-width: px-to-rem(1440);
+  // margin: auto;
+  // max-width: px-to-rem(1440);
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: $primary-bg-color; // debug
+  background-color: $primary-bg-color;
 }
 
-header {
-  padding: 40px 24px 0;
+.container {
+  margin: auto;
+  max-width: px-to-rem(1440);
+  padding: 40px clamp(24px, 8vw, 165px) 0;
 }
 
-section {
-  padding: 40px 24px 0;
-}
+// header {
+//   padding: 40px 24px 0;
+// }
+
+// section {
+//   padding: 40px 24px 0;
+// }
 
 ul {
   list-style: none;
 }
+
+// @media (width >= px-to-rem(1000)) {
+//   header,
+//   section,
+//   footer {
+//     padding: 40px clamp(24px, 8vw, 165px) 0;
+//     padding-left: 100px;
+//     padding-right: 100px;
+//   }
+// }
+
+// @media (width >= px-to-rem(1200)) {
+//   header,
+//   section,
+//   footer {
+//     padding-left: 165px;
+//     padding-right: 165px;
+//   }
+// }

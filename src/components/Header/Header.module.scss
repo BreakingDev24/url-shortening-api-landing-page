@@ -1,6 +1,6 @@
 .headerElements {
-  max-width: px-to-rem(1440);
-  margin: auto;
+  // max-width: px-to-rem(1440);
+  // margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,5 +72,46 @@
   .menuIcon {
     width: 24px;
     pointer-events: none;
+  }
+}
+
+@media (width >= px-to-rem(750)) {
+  .headerElements {
+    gap: px-to-rem(45);
+  }
+
+  .menuBtn {
+    display: none;
+  }
+  .navElements {
+    padding: 0;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: inherit;
+  }
+}
+
+.nav {
+  font-size: px-to-rem(15);
+  border: none;
+  ul {
+    color: $neutral-grayishViolet;
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+}
+
+.logBtnContainer {
+  flex-direction: row;
+  padding-top: 0;
+
+  .loginBtn {
+    color: $neutral-grayishViolet;
+  }
+  .signUpBtn {
+    padding: 8px 24px;
   }
 }

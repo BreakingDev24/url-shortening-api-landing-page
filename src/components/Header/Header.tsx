@@ -14,26 +14,28 @@ export default function Header() {
 
   return (
     <header>
-      <div className={style.headerElements}>
-        <img className={style.logo} src={logo} alt="logo" />
-        <div
-          className={clsx(style.navElements, { [style.active]: isMenuOpen })}
-        >
-          <nav className={style.nav}>
-            <ul>
-              <li>Feautures</li>
-              <li>Pricing</li>
-              <li>Resources</li>
-            </ul>
-          </nav>
-          <div className={style.logBtnContainer}>
-            <button className={style.loginBtn}>Login</button>
-            <button className={style.signUpBtn}>Sign Up</button>
+      <div className="container">
+        <div className={style.headerElements}>
+          <img className={style.logo} src={logo} alt="logo" />
+          <div
+            className={clsx(style.navElements, { [style.active]: isMenuOpen })}
+          >
+            <nav className={style.nav}>
+              <ul>
+                <li>Feautures</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+              </ul>
+            </nav>
+            <div className={style.logBtnContainer}>
+              <button className={style.loginBtn}>Login</button>
+              <button className={style.signUpBtn}>Sign Up</button>
+            </div>
           </div>
+          <button className={style.menuBtn} onClick={toggleMenu}>
+            <img className={style.menuIcon} src={menuIcon} alt="menu-icon" />
+          </button>
         </div>
-        <button className={style.menuBtn} onClick={toggleMenu}>
-          <img className={style.menuIcon} src={menuIcon} alt="menu-icon" />
-        </button>
       </div>
     </header>
   );
