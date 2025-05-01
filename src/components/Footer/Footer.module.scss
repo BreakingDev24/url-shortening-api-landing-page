@@ -12,11 +12,13 @@ footer {
 }
 
 .footerContent {
+  width: 100%;
   display: grid;
   gap: px-to-rem(48);
 }
 
 .listContainer {
+  justify-content: center;
   display: grid;
   gap: px-to-rem(40);
 }
@@ -35,6 +37,17 @@ footer {
 }
 
 .social {
+  place-self: center;
   display: flex;
   gap: px-to-rem(24);
+}
+
+@media (width >= px-to-rem(900)) {
+  .footerContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .listContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
