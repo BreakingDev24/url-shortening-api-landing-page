@@ -3,21 +3,35 @@
 }
 
 .heroElements {
+  container-type: inline-size;
+  container-name: hero-banner;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
   padding-bottom: 168px;
   position: relative;
 }
 
 .heroPic {
-  width: 510px;
+  flex: 2 1 400px;
+  max-width: 730px;
+  min-width: 400px;
+  width: 100%;
 }
 
 .heroTextContainer {
+  flex: 1 1 360px;
+
+  width: 100%;
   text-align: center;
+  align-self: center;
   h1 {
     color: $neutral-veryDarkBlue;
-    font-size: px-to-rem(42);
+    font-size: clamp(px-to-rem(42), calc(1.75rem + 2.5cqw), px-to-rem(80));
     letter-spacing: px-to-rem(-1.05);
-    line-height: 48px;
+    line-height: 90px;
     margin-bottom: 15px;
   }
   p {
@@ -70,5 +84,15 @@
       font-weight: $font-weight-bold;
       padding: 10px 0;
     }
+  }
+}
+
+@media (width >= px-to-rem(977)) {
+  .heroPic {
+    order: 2;
+  }
+  .heroTextContainer {
+    order: 1;
+    text-align: left;
   }
 }
