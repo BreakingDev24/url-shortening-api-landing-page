@@ -22,6 +22,7 @@ main {
 }
 
 .container {
+  width: 100%;
   margin: auto;
   max-width: px-to-rem(1440);
   padding: 40px clamp(24px, 8vw, 165px) 0;
