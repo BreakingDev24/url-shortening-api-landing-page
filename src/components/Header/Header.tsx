@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import logo from "../../assets/logo.svg";
 import style from "./Header.module.scss";
 import menuIcon from "../../assets/burger-menu.svg";
 import { useState } from "react";
+import Logo from "../Logo/Logo";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -16,7 +16,7 @@ export default function Header() {
     <header>
       <div className="container">
         <div className={style.headerElements}>
-          <img className={style.logo} src={logo} alt="logo" />
+          <Logo variant="header"></Logo>
           <div
             className={clsx(style.navElements, { [style.active]: isMenuOpen })}
           >

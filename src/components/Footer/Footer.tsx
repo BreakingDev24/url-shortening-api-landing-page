@@ -5,6 +5,7 @@ import facebookIcon from "../../assets/icon-facebook.svg";
 import twitterIcon from "../../assets/icon-twitter.svg";
 import instagramIcon from "../../assets/icon-instagram.svg";
 import pinterestIcon from "../../assets/icon-pinterest.svg";
+import Logo from "../Logo/Logo";
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
       <div className="container">
         <div className={style.footerContent}>
           <div className={style.logoContainer}>
-            <img src={logo} alt="logo" className={style.logo} />
+            <Logo variant="footer"></Logo>
           </div>
           <div className={style.listContainer}>
             <div className={clsx(style.linksContainer, style.features)}>
