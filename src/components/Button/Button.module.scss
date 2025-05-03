@@ -1,0 +1,37 @@
+.button {
+  border: none;
+  background-color: $primary-cyan;
+  font-size: px-to-rem(18);
+  color: $text-color-btn;
+  font-weight: $font-weight-bold;
+  text-align: center;
+}
+
+.small {
+  padding: 8px 24px;
+}
+
+.large {
+  font-size: px-to-rem(20);
+  padding: 14px 40px;
+}
+
+.primary {
+  border-radius: 28px;
+}
+
+.secondary {
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.login {
+  border: none;
+  background: none;
+}
+
+@media (width >= px-to-rem(750)) {
+  .login {
+    color: $neutral-grayishViolet;
+  }
+}
