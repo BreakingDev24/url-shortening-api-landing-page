@@ -3,6 +3,7 @@ import style from "./Header.module.scss";
 import menuIcon from "../../assets/burger-menu.svg";
 import { useState } from "react";
 import Logo from "../Logo/Logo";
+import Button from "../Button/Button";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -28,8 +29,10 @@ export default function Header() {
               </ul>
             </nav>
             <div className={style.logBtnContainer}>
-              <button className={style.loginBtn}>Login</button>
-              <button className={style.signUpBtn}>Sign Up</button>
+              <Button variant="login">Login</Button>
+              <Button variant="primary" size="small">
+                Sign Up
+              </Button>
             </div>
           </div>
           <button className={style.menuBtn} onClick={toggleMenu}>

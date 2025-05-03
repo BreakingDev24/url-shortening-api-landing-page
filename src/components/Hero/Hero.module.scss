@@ -41,16 +41,6 @@
     line-height: 30px;
     margin-bottom: 46px;
   }
-
-  button {
-    color: $text-color-btn;
-    font-size: px-to-rem(20);
-    font-weight: $font-weight-medium;
-    padding: 14px 40px;
-    border: none;
-    background-color: $primary-cyan;
-    border-radius: 28px;
-  }
 }
 
 .formContainer {
@@ -72,17 +62,6 @@
       padding: 6px 16px;
       border-radius: 5px;
       border: none;
-    }
-
-    button {
-      font-size: px-to-rem(18);
-      border: none;
-      border-radius: 5px;
-      color: $text-color-btn;
-      background-color: $primary-cyan;
-      text-align: center;
-      font-weight: $font-weight-bold;
-      padding: 10px 0;
     }
   }
 }

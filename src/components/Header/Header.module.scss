@@ -45,23 +45,8 @@
 .logBtnContainer {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   padding-top: 30px;
-  button {
-    font-size: px-to-rem(18);
-    color: $text-color-btn;
-    font-weight: $font-weight-bold;
-  }
-  .loginBtn {
-    border: none;
-    background: none;
-  }
-  .signUpBtn {
-    border: none;
-    background-color: $primary-cyan;
-    border-radius: 28px;
-    padding: 12px 0;
-  }
 }
 
 .menuBtn {
@@ -73,7 +58,7 @@
   }
 }
 
-@media (width >= px-to-rem(750)) {
+@media (width >= px-to-rem(790)) {
   .headerElements {
     gap: px-to-rem(45);
   }
@@ -104,11 +89,8 @@
     flex-direction: row;
     padding-top: 0;
 
-    .loginBtn {
-      color: $neutral-grayishViolet;
-    }
-    .signUpBtn {
-      padding: 8px 24px;
-    }
+    // .signUpBtn {
+    //   padding: 8px 24px;
+    // }
   }
 }
