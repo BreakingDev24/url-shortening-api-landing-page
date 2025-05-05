@@ -35,9 +35,9 @@ export default function Header() {
               </Button>
             </div>
           </div>
-          <button className={style.menuBtn} onClick={toggleMenu}>
+          <Button variant="menu" onClick={toggleMenu}>
             <img className={style.menuIcon} src={menuIcon} alt="menu-icon" />
-          </button>
+          </Button>
         </div>
       </div>
     </header>
