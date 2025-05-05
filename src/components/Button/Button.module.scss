@@ -5,6 +5,7 @@
   color: $text-color-btn;
   font-weight: $font-weight-bold;
   text-align: center;
+  cursor: pointer;
 }
 
 .small {
@@ -30,8 +31,16 @@
   background: none;
 }
 
-@media (width >= px-to-rem(750)) {
+.menu {
+  background: none;
+}
+
+@media (width > px-to-rem(790)) {
   .login {
     color: $neutral-grayishViolet;
+  }
+
+  .menu {
+    display: none;
   }
 }
