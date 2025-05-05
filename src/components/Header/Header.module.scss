@@ -49,23 +49,16 @@
   padding-top: 30px;
 }
 
-.menuBtn {
-  background: none;
-  border: none;
-  .menuIcon {
-    width: 24px;
-    pointer-events: none;
-  }
+.menuIcon {
+  width: 24px;
+  pointer-events: none;
 }
 
-@media (width >= px-to-rem(790)) {
+@media (width > px-to-rem(790)) {
   .headerElements {
     gap: px-to-rem(45);
   }
 
-  .menuBtn {
-    display: none;
-  }
   .navElements {
     padding: 0;
     position: static;
