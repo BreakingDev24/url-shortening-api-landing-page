@@ -14,6 +14,10 @@ export default function Header() {
   };
 
   useEffect(() => {
+    document.body.style.overflowY = isMenuOpen ? "hidden" : "auto";
+  }, [isMenuOpen]);
+
+  useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 790px)");
 
     const handleResize = () => {
