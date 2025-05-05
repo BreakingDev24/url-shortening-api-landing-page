@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import style from "./Header.module.scss";
 import menuIcon from "../../assets/burger-menu.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../Logo/Logo";
 import Button from "../Button/Button";
 
@@ -9,9 +9,25 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev); // Cambia lo stato attuale di isMenuOpen.
+    setIsMenuOpen((prev) => !prev);
     console.log(isMenuOpen);
   };
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 790px)");
+
+    const handleResize = () => {
+      if (mediaQuery.matches) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleResize);
+    };
+  }, []);
 
   return (
     <header>
