@@ -1,6 +1,6 @@
 footer {
   background-color: $primary-darkBlue;
-  padding: 54px 0;
+  padding: px-to-rem(54) 0;
   display: grid;
   justify-items: center;
   text-align: center;

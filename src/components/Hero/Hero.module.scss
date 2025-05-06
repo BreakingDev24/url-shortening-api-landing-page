@@ -9,20 +9,20 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 60px;
-  padding-bottom: 168px;
+  gap: px-to-rem(60);
+  padding-bottom: px-to-rem(168);
   position: relative;
 }
 
 .heroPic {
-  flex: 2 1 400px;
-  max-width: 730px;
-  min-width: 400px;
+  flex: 2 1 px-to-rem(400);
+  max-width: px-to-rem(730);
+  min-width: px-to-rem(400);
   width: 100%;
 }
 
 .heroTextContainer {
-  flex: 1 1 360px;
+  flex: 1 1 px-to-rem(360);
 
   width: 100%;
   text-align: center;
@@ -31,15 +31,15 @@
     color: $neutral-veryDarkBlue;
     font-size: clamp(px-to-rem(42), calc(1.75rem + 2.5cqw), px-to-rem(80));
     letter-spacing: px-to-rem(-1.05);
-    line-height: 90px;
-    margin-bottom: 15px;
+    line-height: px-to-rem(90);
+    margin-bottom: px-to-rem(15);
   }
   p {
     color: $neutral-grayishViolet;
     font-size: px-to-rem(18);
     letter-spacing: px-to-rem(0.12);
-    line-height: 30px;
-    margin-bottom: 46px;
+    line-height: px-to-rem(30);
+    margin-bottom: px-to-rem(46);
   }
 }
 
@@ -50,12 +50,12 @@
   width: 100%;
   background: url(../../assets/bg-shorten-mobile.svg) no-repeat right top;
   background-color: $primary-darkViolet;
-  padding: 24px;
+  padding: px-to-rem(24);
   border-radius: 10px;
   form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: px-to-rem(16);
 
     input {
       line-height: 36px;

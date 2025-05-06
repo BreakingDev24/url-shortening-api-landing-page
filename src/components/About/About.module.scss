@@ -37,7 +37,7 @@
 }
 
 .card {
-  padding: 77px 32px 41px;
+  padding: px-to-rem(77) px-to-rem(32) px-to-rem(41);
   background-color: white;
   position: relative;
   height: fit-content;
@@ -82,7 +82,7 @@
   .cardsContainer {
     grid-auto-rows: auto;
     row-gap: 0;
-    column-gap: 30px;
+    column-gap: px-to-rem(30);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 44px 44px auto;
 

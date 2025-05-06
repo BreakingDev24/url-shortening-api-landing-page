@@ -10,7 +10,7 @@
 .navElements {
   z-index: 1000;
   font-size: px-to-rem(18);
-  padding: 40px 24px;
+  padding: px-to-rem(40) px-to-rem(24);
   position: absolute;
   top: calc(100% + 20px);
   background-color: $primary-darkViolet;
@@ -36,17 +36,17 @@
 
     text-align: center;
     list-style: none;
-    gap: 30px;
+    gap: px-to-rem(30);
 
-    padding-bottom: 30px;
+    padding-bottom: px-to-rem(30);
   }
 }
 
 .logBtnContainer {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding-top: 30px;
+  gap: px-to-rem(20);
+  padding-top: px-to-rem(30);
 }
 
 .menuIcon {

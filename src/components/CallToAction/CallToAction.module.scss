@@ -1,6 +1,7 @@
 .ctaSection {
   margin-top: px-to-rem(80);
   padding: 90px 35px;
+  padding: px-to-rem(90) px-to-rem(35);
   text-align: center;
   background: url(../../assets/bg-boost-mobile.svg);
   background-size: cover;
@@ -11,10 +12,10 @@
   color: $text-color-btn;
   font-weight: $font-weight-bold;
   font-size: px-to-rem(18);
-  letter-spacing: -0.7px;
-  line-height: 48px;
+  letter-spacing: px-to-rem(-0.7);
+  line-height: px-to-rem(48);
 
   h2 {
-    margin-bottom: 16px;
+    margin-bottom: px-to-rem(16);
   }
 }
