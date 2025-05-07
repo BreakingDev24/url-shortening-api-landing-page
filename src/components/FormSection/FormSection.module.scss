@@ -1,0 +1,23 @@
+.formSection {
+  background: linear-gradient(to bottom, #ffffff 50%, #f0f0f0 50%);
+  padding-top: 0;
+}
+
+.formContainer {
+  background: url(../../assets/bg-shorten-mobile.svg) no-repeat right top;
+  background-color: $primary-darkViolet;
+  padding: px-to-rem(24);
+  border-radius: 10px;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: px-to-rem(16);
+
+    input {
+      line-height: 36px;
+      padding: 6px 16px;
+      border-radius: 5px;
+      border: none;
+    }
+  }
+}
