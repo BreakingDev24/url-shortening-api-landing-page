@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import CallToAction from "./components/CallToAction/CalltoAction";
 import Footer from "./components/Footer/Footer";
+import FormSection from "./components/FormSection/FormSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header></Header>
       <main>
         <Hero></Hero>
+        <FormSection></FormSection>
         <About></About>
         <CallToAction></CallToAction>
       </main>
