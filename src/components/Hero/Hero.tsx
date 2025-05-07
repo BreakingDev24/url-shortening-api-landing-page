@@ -17,14 +17,6 @@ export default function Hero() {
               Get Started
             </Button>
           </div>
-          <div className={style.formContainer}>
-            <form action="">
-              <input type="text" placeholder="Shorten a link here..." />
-              <Button variant="secondary" type="submit">
-                Shorten It!
-              </Button>
-            </form>
-          </div>
         </div>
       </div>
     </section>
