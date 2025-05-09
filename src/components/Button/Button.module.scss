@@ -35,6 +35,10 @@
   background: none;
 }
 
+.copied {
+  background-color: $primary-darkViolet;
+}
+
 @media (width > px-to-rem(790)) {
   .login {
     color: $neutral-grayishViolet;
