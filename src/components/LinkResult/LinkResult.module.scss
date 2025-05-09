@@ -1,0 +1,20 @@
+.result {
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: px-to-rem(16);
+  gap: px-to-rem(13);
+}
+
+.separator {
+  height: 1px;
+  width: calc(100% + px-to-rem(32));
+  background-color: $neutral-grayishViolet;
+  margin-left: px-to-rem(-16);
+  margin-right: px-to-rem(-16);
+}
+
+.resultLink {
+  color: $primary-cyan;
+}
