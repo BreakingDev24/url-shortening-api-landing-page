@@ -1,42 +1,25 @@
 import { useEffect, useState } from "react";
 import Button from "../Button/Button";
 import style from "./FormSection.module.scss";
-
+import getData from "../../api/shortenApi";
+import { useLinkContext } from "../../context/ShortenLinksContext";
 export default function FormSection() {
   const [input, setInput] = useState("");
   // const [shortUrl, setShortUrl] = useState("");
-  const [savedLinks, setSavedLinks] = useState<
-    { userInput: string; shortned: string }[]
-  >([]);
+  const { savedLinks, setSavedLinks } = useLinkContext();
 
   useEffect(() => {
     console.log("Links aggiornati:", savedLinks);
   }, [savedLinks]);
 
-  async function getData(url: string) {
-    const corsProxy = "https://cors-anywhere.herokuapp.com/";
-    const apiUrl = "https://cleanuri.com/api/v1/shorten";
-    try {
-      const response = await fetch(corsProxy + apiUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ url }),
-      });
-      const data = await response.json();
-      setSavedLinks((prev) => [
-        ...prev,
-        { userInput: url, shortned: data.result_url },
-      ]);
-    } catch (e) {
-      console.error(e);
-    }
-  }
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     console.log(input);
-    getData(input);
+    const data = await getData(input);
+    setSavedLinks((prev) => [
+      ...prev,
+      { userInput: input, shortned: data.result_url },
+    ]);
   };
   return (
     <section className={style.formSection}>
