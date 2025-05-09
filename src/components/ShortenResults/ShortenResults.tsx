@@ -3,6 +3,7 @@ import style from "./ShortenResults.module.scss";
 import Button from "../Button/Button";
 import { useLinkContext } from "../../context/ShortenLinksContext";
 import { useState } from "react";
+import LinkResult from "../LinkResult/LinkResult";
 
 export default function ShortenResults() {
   const { savedLinks } = useLinkContext();
@@ -16,24 +17,15 @@ export default function ShortenResults() {
       <div className="container">
         <div className={clsx(style.resultsContainer)}>
           {savedLinks.map((link, index) => (
-            <div key={index} className={clsx(style.result)}>
-              <p className={clsx(style.userLink)}>{link.userInput}</p>
-              <div className={clsx(style.separator)}></div>
-              <p className={clsx(style.resultLink)}>{link.shortned}</p>
-              <Button
-                variant="secondary"
-                onClick={() => handleCopy(link.shortned, index)}
-              >
-                {copiedLink === index ? "Copied" : "Copy"}
-              </Button>
-            </div>
+            <LinkResult
+              key={index}
+              userLink={link.userInput}
+              shortLink={link.shortned}
+              index={index}
+              copied={copiedLink === index}
+              onCopy={handleCopy}
+            ></LinkResult>
           ))}
-          {/* <div className={clsx(style.result)}>
-            <p className={clsx(style.userLink)}>https://linkmockup.com</p>
-            <div className={clsx(style.separator)}></div>
-            <p className={clsx(style.resultLink)}>cortomockup</p>
-            <Button variant="secondary">Copy</Button>
-          </div> */}
         </div>
       </div>
     </section>
