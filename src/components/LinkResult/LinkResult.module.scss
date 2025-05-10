@@ -18,3 +18,16 @@
 .resultLink {
   color: $primary-cyan;
 }
+
+@media (width >= px-to-rem(1000)) {
+  .result {
+    flex-direction: row;
+    align-items: center;
+  }
+  .userLink {
+    flex: 1;
+  }
+  .separator {
+    display: none;
+  }
+}
