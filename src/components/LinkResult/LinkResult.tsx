@@ -25,6 +25,7 @@ export default function LinkResult({
       <Button
         copied={copied}
         variant="secondary"
+        size="small"
         onClick={() => onCopy(shortLink, index)}
       >
         {copied ? "Copied" : "Copy"}
