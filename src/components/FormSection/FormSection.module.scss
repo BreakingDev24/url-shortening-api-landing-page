@@ -36,7 +36,8 @@
 
 @media (width >= px-to-rem(1000)) {
   .formContainer {
-    background: url(../../assets/bg-shorten-desktop.svg) no-repeat right top;
+    background-image: url(../../assets/bg-shorten-desktop.svg);
+    background-size: 100% 100%;
     background-color: $primary-darkViolet;
     padding: px-to-rem(52) px-to-rem(64);
     form {
