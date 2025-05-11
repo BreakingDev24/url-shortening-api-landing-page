@@ -38,10 +38,13 @@ export default function FormSection() {
       setInput("");
       const data = await getData(cleanedInput);
       if (!data) return;
-      setSavedLinks((prev) => [
-        ...prev,
-        { userInput: input, shortned: data.result_url },
-      ]);
+      setSavedLinks((prev) => {
+        const update = [
+          { userInput: input, shortned: data.result_url },
+          ...prev.slice(0, 2),
+        ];
+        return update;
+      });
     } catch (error) {
       console.error(error);
     }
