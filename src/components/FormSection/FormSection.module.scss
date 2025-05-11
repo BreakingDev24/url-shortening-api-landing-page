@@ -12,12 +12,43 @@
     display: flex;
     flex-direction: column;
     gap: px-to-rem(16);
+  }
+}
 
-    input {
-      line-height: 36px;
-      padding: 6px 16px;
-      border-radius: 5px;
-      border: none;
+.formGroup {
+  flex: 1;
+  display: grid;
+  input {
+    width: 100%;
+    line-height: 36px;
+    padding: 6px 16px;
+    border-radius: 5px;
+    border: none;
+  }
+  input.error {
+    outline: 2px solid $secondary-red;
+  }
+
+  .errorMsg {
+    color: $secondary-red;
+  }
+}
+
+@media (width >= px-to-rem(1000)) {
+  .formContainer {
+    background: url(../../assets/bg-shorten-desktop.svg) no-repeat right top;
+    background-color: $primary-darkViolet;
+    padding: px-to-rem(52) px-to-rem(64);
+    form {
+      flex-direction: row;
+    }
+  }
+  .formGroup {
+    position: relative;
+
+    .errorMsg {
+      position: absolute;
+      top: 100%;
     }
   }
 }
