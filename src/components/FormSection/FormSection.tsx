@@ -32,9 +32,11 @@ export default function FormSection() {
     const cleanedInput = cleanAndValidateInputUrl(input);
     if (!cleanedInput) {
       setError("Please add a valid input");
+      return;
     }
     try {
-      const data = await getData(input);
+      setInput("");
+      const data = await getData(cleanedInput);
       if (!data) return;
       setSavedLinks((prev) => [
         ...prev,
