@@ -1,4 +1,10 @@
-import { createContext, ReactNode, useContext, useState } from "react";
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 interface LinkContextType {
   savedLinks: { userInput: string; shortned: string }[];
@@ -18,6 +24,16 @@ export function LinkProvider({ children }: { children: ReactNode }) {
     { userInput: string; shortned: string }[]
   >([]);
   const [error, setError] = useState("");
+  useEffect(() => {
+    const storedLinks = localStorage.getItem("savedLinks");
+    if (storedLinks) {
+      setSavedLinks(JSON.parse(storedLinks));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("savedLinks", JSON.stringify(savedLinks));
+  }, [savedLinks]);
   return (
     <ShortenLinkContext.Provider
       value={{ savedLinks, setSavedLinks, error, setError }}
