@@ -19,3 +19,11 @@
     margin-bottom: px-to-rem(16);
   }
 }
+
+@media (width >= px-to-rem(1000)) {
+  .ctaSection {
+    background-image: url(../../assets/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
