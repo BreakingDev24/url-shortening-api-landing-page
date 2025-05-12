@@ -1,7 +1,10 @@
 import style from "./Hero.module.scss";
 import homePic from "../../assets/illustration-working.svg";
 import Button from "../Button/Button";
+import { useInputRef } from "../../context/InputRefContext";
 export default function Hero() {
+  const { handleClick } = useInputRef();
+
   return (
     <section className={style.hero}>
       <div className="container">
@@ -13,7 +16,7 @@ export default function Hero() {
               Build your brand’s recognition and get detailed insights on how
               your links are performing.
             </p>
-            <Button variant="primary" size="large">
+            <Button onClick={handleClick} variant="primary" size="large">
               Get Started
             </Button>
           </div>
