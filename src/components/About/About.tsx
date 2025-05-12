@@ -2,7 +2,6 @@ import style from "./About.module.scss";
 import iconBrandRecognition from "../../assets/icon-brand-recognition.svg";
 import iconDetailed from "../../assets/icon-detailed-records.svg";
 import iconFullyCustomizable from "../../assets/icon-fully-customizable.svg";
-import clsx from "clsx";
 
 export default function About() {
   return (

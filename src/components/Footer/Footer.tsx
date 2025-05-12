@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import style from "./Footer.module.scss";
-import logo from "../../assets/logo.svg";
 import facebookIcon from "../../assets/icon-facebook.svg";
 import twitterIcon from "../../assets/icon-twitter.svg";
 import instagramIcon from "../../assets/icon-instagram.svg";

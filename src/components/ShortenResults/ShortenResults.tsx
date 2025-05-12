@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import style from "./ShortenResults.module.scss";
-import Button from "../Button/Button";
 import { useLinkContext } from "../../context/ShortenLinksContext";
 import { useState } from "react";
 import LinkResult from "../LinkResult/LinkResult";
