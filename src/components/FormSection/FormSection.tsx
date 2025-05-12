@@ -4,11 +4,12 @@ import style from "./FormSection.module.scss";
 import getData from "../../api/shortenApi";
 import { useLinkContext } from "../../context/ShortenLinksContext";
 import clsx from "clsx";
+import { useInputRef } from "../../context/InputRefContext";
 export default function FormSection() {
   const [input, setInput] = useState("");
   // const [shortUrl, setShortUrl] = useState("");
   const { savedLinks, setSavedLinks, error, setError } = useLinkContext();
-
+  const { inputRef } = useInputRef();
   useEffect(() => {
     console.log("Links aggiornati:", savedLinks);
   }, [savedLinks]);
@@ -56,6 +57,7 @@ export default function FormSection() {
           <form action="" onSubmit={handleSubmit}>
             <div className={clsx(style.formGroup)}>
               <input
+                ref={inputRef}
                 type="text"
                 placeholder="Shorten a link here..."
                 value={input}
