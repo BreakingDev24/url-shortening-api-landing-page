@@ -1,8 +1,6 @@
 async function getData(url: string) {
-  const corsProxy = "https://cors-anywhere.herokuapp.com/";
-  const apiUrl = "https://cleanuri.com/api/v1/shorten";
   try {
-    const response = await fetch(corsProxy + apiUrl, {
+    const response = await fetch("/.netlify/functions/shorten", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
