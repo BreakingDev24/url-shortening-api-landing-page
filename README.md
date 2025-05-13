@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [](https://urlshorteningapilandingpage.netlify.app/)
+- Live Site URL: [Go Live](https://urlshorteningapilandingpage.netlify.app/)
 
 ### Built with
 
